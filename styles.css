@@ -1,0 +1,213 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Header Styles */
+.app-header {
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* DOSLY MUSIC Text */
+.dolsy-title {
+    font-size: 4em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    cursor: default;
+    animation: fadeInUp 2s ease-out;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for DOSLY MUSIC */
+.dolsy-title:hover {
+    color: #f4f4f4;
+    transform: scale(1.1);
+}
+
+/* Main Content Section */
+.main-content {
+    animation: fadeInUp 3s ease-out;
+}
+
+.intro-text p {
+    font-size: 1.5em;
+    color: #bbb;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeInUp 3s forwards;
+    animation-delay: 2s; /* Delay to make it appear after 2s */
+}
+
+/* Footer Styles */
+.app-footer {
+    margin-top: 30px;
+    animation: fadeInUp 4s ease-out;
+    opacity: 0;
+    animation-delay: 3s; /* Delay footer animation until the page is redirecting */
+}
+
+.app-footer p {
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic Reset for the Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background for better contrast */
+    color: white;
+    text-align: center;
+}
+
+/* Floating Music Notes Container */
+#musicContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: -1; /* Place behind other content */
+}
+
+/* Music Notes Style */
+.musicNote {
+    font-size: 80px; /* Large size for music symbols */
+    position: absolute;
+    animation: float 8s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+/* Color classes */
+.orange {
+    color: #FF3300; /* orange */
+}
+.green {
+    color: #FFFFFF; /* Green */
+}
+.lime {
+    color: #00FF00; /* Lime */
+}
+.aqua {
+    color: #00FFFF; /* Aqua */
+}
+.yellow {
+    color: #FFFF00; /* yellow */
+}
+.maroon {
+    color: #800000; /* maroon */
+}
+.fuchsia {
+    color: #FF1493; /* pink */
+}
+.blue {
+    color: #2BB6EE; /* blue */
+}
+
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-400px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(720deg);
+        opacity: 0.8;
+    }
+}
+
+/* Randomize Position and Animation Duration */
+.musicNote:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+}
+.musicNote:nth-child(2) {
+    left: 20%;
+    animation-duration: 9s;
+}
+.musicNote:nth-child(3) {
+    left: 30%;
+    animation-duration: 11s;
+}
+.musicNote:nth-child(4) {
+    left: 40%;
+    animation-duration: 8s;
+}
+.musicNote:nth-child(5) {
+    left: 50%;
+    animation-duration: 12s;
+}
+.musicNote:nth-child(6) {
+    left: 60%;
+    animation-duration: 10s;
+}
+.musicNote:nth-child(7) {
+    left: 70%;
+    animation-duration: 13s;
+}
+

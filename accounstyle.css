@@ -1,0 +1,191 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Centering the container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling the register box */
+.register-box {
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    padding: 50px;
+    border-radius: 15px;
+    width: 360px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+.register-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+
+/* Title Styling */
+h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    color: #ddd;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #222;
+    border: 2px solid #444;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #fff;
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.5);
+}
+
+/* Button styling */
+button {
+    background-color: #444;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #333;
+    transform: translateY(2px);
+}
+
+/* Error message styling */
+.error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Links (Already have an account) */
+.links {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.links a {
+    color: #bbb;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* General Styles for Message Container */
+#messageContainer {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Error message style */
+#errorMessage {
+    color: #fff; /* White text for better contrast */
+    background-color: #f44336; /* Red background for error */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d32f2f; /* Darker red border */
+    text-align: center;
+    margin-top: 15px;
+    display: block; /* Show the error message */
+}
+
+/* Success message style (if you need it for future use) */
+#successMessage {
+    color: #fff; /* White text for contrast */
+    background-color: #4CAF50; /* Green background for success */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #388E3C; /* Darker green border */
+    text-align: center;
+    margin-top: 15px;
+    display: none; /* Hidden initially */
+}
+
+/* Optional: Styling for input fields for better UX */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}

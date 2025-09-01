@@ -1,0 +1,268 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+/* App Container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+.app-header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Hover effect for "Dolsy" */
+.dolsy-title {
+    font-size: 4em;
+    margin: 0;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Glowing effect and animation on hover */
+.dolsy-title:hover {
+    color: #f4f4f4;
+    text-shadow: 0 0 15px #fff;
+    transform: scale(1.1);
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+.main-nav ul li {
+    display: inline;
+    margin: 0 25px;
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+/* Hover effect for Navigation Links */
+.main-nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Main Content Section */
+.main-content {
+    text-align: center;
+    padding: 50px;
+    animation: fadeInUp 1.5s ease-out;
+}
+
+.intro-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+}
+
+.intro-text p {
+    font-size: 1.2em;
+    color: #bbb;
+    opacity: 0;
+    animation: fadeInUp 2s forwards;
+    animation-delay: 0.5s;
+}
+
+.cta-btn {
+    background-color: #444;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #666;
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+.app-footer {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    animation: fadeInUp 2s forwards;
+    animation-delay: 1.5s;
+}
+
+.app-footer p {
+    margin: 0;
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic Reset for the Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background for better contrast */
+    color: white;
+    text-align: center;
+}
+
+/* Floating Music Notes Container */
+#musicContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Allow clicks to pass through */
+    z-index: -1; /* Place behind other content */
+}
+
+/* Music Notes Style */
+.musicNote {
+    font-size: 80px; /* Large size for music symbols */
+    position: absolute;
+    animation: float 8s ease-in-out infinite;
+    opacity: 0.8;
+}
+
+/* Color classes */
+.orange {
+    color: #FF3300; /* orange */
+}
+.green {
+    color: #FFFFFF; /* Green */
+}
+.lime {
+    color: #00FF00; /* Lime */
+}
+.aqua {
+    color: #00FFFF; /* Aqua */
+}
+.yellow {
+    color: #FFFF00; /* yellow */
+}
+.maroon {
+    color: #800000; /* maroon */
+}
+.fuchsia {
+    color: #FF1493; /* pink */
+}
+.blue {
+    color: #2BB6EE; /* blue */
+}
+
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-400px) rotate(360deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0) rotate(720deg);
+        opacity: 0.8;
+    }
+}
+
+/* Randomize Position and Animation Duration */
+.musicNote:nth-child(1) {
+    left: 10%;
+    animation-duration: 10s;
+}
+.musicNote:nth-child(2) {
+    left: 20%;
+    animation-duration: 9s;
+}
+.musicNote:nth-child(3) {
+    left: 30%;
+    animation-duration: 11s;
+}
+.musicNote:nth-child(4) {
+    left: 40%;
+    animation-duration: 8s;
+}
+.musicNote:nth-child(5) {
+    left: 50%;
+    animation-duration: 12s;
+}
+.musicNote:nth-child(6) {
+    left: 60%;
+    animation-duration: 10s;
+}
+.musicNote:nth-child(7) {
+    left: 70%;
+    animation-duration: 13s;
+}
